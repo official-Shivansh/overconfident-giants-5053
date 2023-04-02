@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+    <div id="login">
+        <h2>LOGIN</h2>
+        <input type="text" id="user" placeholder="enter mail">
+        <input type="password" id="user_password" placeholder="Enter your password">
+        <button id="loginbtn">login</button>
+        <a style="text-align: center; padding-left: 40%;" href="signin.html">SignIn</a>
+        <a style="text-align: center; padding-left: 40%;" href="index.html">Home</a>
+    </div>
+</body>
+</html>
+<script>
+document.getElementById("loginbtn").addEventListener("click",()=>{
+    let uName=document.getElementById("user");
+    let upass=document.getElementById("user_password");
+   if(uName.value=="soni@gmail.com" && upass.value=="12345"){
+    alert("SignIn Successfully");
+    window.location.href="index.html"
+}
+else if(uName.value!="soni@gmail.com" ){
+       alert("Wrong Email");
+   }
+else if(upass.value!="12345" ){
+       alert("Wrong Email");
+   }
+})
+
+
+
+</script>

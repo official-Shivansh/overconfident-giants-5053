@@ -96,3 +96,54 @@ margin: 2%;
 .bimg>img{
     width: 100%;
 }
+#home{
+  display: block;
+}
+
+/* ---------perfume page----- */
+#perfPage{
+  display: none;
+}
+
+#perfumePage{
+  display: flex;
+  /* border: 3px solid; */
+  width: 98vw;
+  height: auto;
+  background-color: #e8e8e8;
+}
+#perfumePageFilter{ 
+  display: block;
+  padding: auto;
+  width: 30%;
+}
+#perfumePageFilter>select{
+  text-align: center;
+  margin: auto;
+  margin-top: 3%  ;
+  margin-left: 7%  ;
+  height: 50px;
+  width: 80%;
+  font-size: 20px;
+}
+#renderPerfumeData{
+  width: 70%;
+ 
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 1%;
+}
+#renderPerfumeData>div{
+  background-color: white;
+  padding: 2%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+#renderPerfumeData>div>button{
+  background-color: #fe6fa6;
+  height: 40px;
+  width: 30%;
+
+}

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/body.css">
     <link rel="stylesheet" href="style/footer.css">
-    <title>Document</title>
+    <title>MakeupWorld:Home Page</title>
 </head>
 
 <navbar>
@@ -21,18 +21,18 @@
         </div>
     </div>
     <div id="nav2">
-        <div>
+        <div id="png">
             <img src="img/makeupworld.png" alt="">
         </div>
         <div>
             <p>Categories</p>
             <p>Brands</p>
-            <p>Luxe</p>
+            <p id="lux">Luxe</p>
             <p>Fashion</p>
             <p>Beauty Advice</p>
         </div>
         <div><input type="text" placeholder="Search">
-        <button>Sign In</button>
+        <button id="signIn">Sign In</button>
     </div>
     </div>
     <div id="nav3">
@@ -54,10 +54,12 @@
 
 </navbar>
 <body>
+    <div id="home">
 
-    <div class="slideshow-container">
+        
+        <div class="slideshow-container">
     
-    <div class="mySlides fade">
+            <div class="mySlides fade">
       <img src="https://images-static.nykaa.com/uploads/ff7a6391-a8a9-41c6-9fdf-14dc73a29185.jpg?tr=w-1200,cm-pad_resize" style="width:100%">
      
     </div>
@@ -103,6 +105,58 @@
         <img src="img/tenimg.png" alt="">
         
     </div>
+    
+</div>
+
+
+
+<!-- -------------------- -->
+<div id="perfPage">
+
+
+<img style="margin: 2%; margin-left:12% ; " src="https://images-static.nykaa.com/uploads/cde816a9-8c77-4f8e-baef-4db934f33919.jpg?tr=w-1200,cm-pad_resize" alt="">
+<h2 style="text-align: center; font-size: 30px; color: rgb(106, 106, 106);">All Product</h2>
+<div id="perfumePage">
+    <div id="perfumePageFilter">
+        <select name="perfumeCategories" id="perfumeCategories">
+            <option value="Fragrance">Fragrance</option>
+            <option value="skin">Skin</option>
+            <option value="Makeup">Makeup</option>
+            <option value="Bath&Body">Bath and body</option>
+            
+          </select>
+          <br>
+        <select name="perfumeBrand" id="perfumeBrand">
+
+            <option value="Guerlain">Brands</option>
+            <option value="Guerlain">Guerlain</option>
+            <option value="HERMES">HERMES</option>
+            <option value="Jo Malone London">Jo Malone London</option>
+            
+          </select>
+          <br>
+        <select name="perfumePrice" id="perfumePrice">
+            <option value="Price">Price</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+            
+          </select>
+          <br>
+        <select name="perfumeDiss" id="perfumeDiss">
+            <option value="40%">Discount</option>
+            <option value="40%">40%</option>
+            <option value="10%">10%</option>
+            <option value="25%">25%</option>
+            
+          </select>
+    </div>
+    <div id="renderPerfumeData">
+        <!-- render by javascript -->
+    </div>
+</div>
+</div>
+
+
 
 </body>
 <footer>
@@ -281,6 +335,7 @@
     <!-- Footer End -->
 </footer>
 </html>
+<script src="script/index.js"></script>
 <script>
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -308,4 +363,9 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
+
+
+
+
+
     </script>

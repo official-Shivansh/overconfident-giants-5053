@@ -20,6 +20,9 @@
    
     width: 50%;
 }
+#png{
+    width: 27%;
+}
 #nav1>div>h3{
     color: rgb(35, 35, 35);
 }
